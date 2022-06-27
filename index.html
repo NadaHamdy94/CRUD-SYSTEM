@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <title>CRUD SYSTEM</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <section>
+            <div class="container py-5">
+                <div class="row shadow-lg py-5">
+                    <div class="col-md-8 offset-md-2 text-center">
+                        <div class="header">
+                            <h1 class="text-uppercase py-3">crud system</h1>
+                        </div>
+                        <div class="crud-form">
+                            <label for="productNameElement">Product Name</label>
+                            <input type="text" id="productNameElement" class="form-control my-2" placeholder="Product Name">
+                            <p id="errorProductName" class="d-none text-danger"></p>
+                            <label for="productPriceElement">Product Price</label>
+                            <input type="text" id="productPriceElement" class="form-control my-2" placeholder="Product Price">
+                            <p id="errorProductPrice" class="d-none text-danger"></p>
+                            <label for="productCategoryElement">Product Category</label>
+                            <input type="text" id="productCategoryElement" class="form-control my-2" placeholder="Product Category">
+                            <p id="errorProductCategory" class="d-none text-danger"></p>
+                            <label for="productDesElement">Product Des</label>
+                           <textarea id="productDesElement" rows="3" class="form-control my-2" placeholder="Product Desc"></textarea>
+                           <p id="errorMassage" class="d-none text-danger"></p>
+                        </div>
+                        <div class="submit-btn">
+                            <button id="addProductBtn" class="btn btn-outline-success text-capitalize">add product</button>
+                            <button id="updateProductBtn" class="btn btn-outline-warning text-capitalize d-none">update product</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-5">
+                    <div class="col-md-8 offset-md-2 text-center">
+                        <input type="text" id="productSearchElement" class="form-control my-2" placeholder="Product Search...">
+                    </div>
+                </div>
+
+                <div id="productTable">
+                    <table class="table table-success table-striped text-center">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Product Name</th>
+                            <th scope="col">Product Price</th>
+                            <th scope="col">Product Category</th>
+                            <th scope="col">Product Desc</th>
+                            <th scope="col">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody id="tabBody" >
+                         
+                        </tbody>
+                      </table>
+                </div>
+
+                
+            </div>
+        </section>
+
+
+
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/sweetalert2@11.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
